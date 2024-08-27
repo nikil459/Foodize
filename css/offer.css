@@ -1,0 +1,107 @@
+#offer {
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+section {
+    background-color: rgb(228, 234, 238);
+    width: 100%;
+}
+#discount {
+    display: flex;
+    margin-top: 30px;
+}
+
+.restaurant button {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 3px 10px;
+    border: 0.4px solid black;
+}
+
+.restaurant button a {
+    color: black;
+    text-decoration: none;
+}
+
+.restaurant button a:hover {
+    font-weight: bold;
+}
+/* .restaurant img {
+    width: 30px;
+    height: 30px;
+} */
+
+#cards {
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    display: grid;
+    margin-top: 30px;
+    /* background-color: rgb(31, 137, 137); */
+    /* grid-template-columns: 300px 100px 100px; */
+    /* grid-template-columns: 300px auto 100px; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: 800px 900px 200px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* width: 100% */
+}
+
+#card {
+    /* border: 1px solid black; */
+    margin: 5px 8px;
+    border-radius: 5px;
+    width: 250px;
+    height: 380px;
+    cursor: pointer;
+}
+#card a{
+    color:black;
+    list-style: none;
+    text-decoration: none;
+}
+#card img {
+    width: 250px;
+    height: 230px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+#card p{
+    margin-top: 0px;
+}
+
+#background-video {
+    width: 250px;
+    height: 230px;
+    object-fit: cover;
+}
+#card video{
+    border-radius: 24px;
+}
+
+#cards .image img {
+    margin-top: -15px;
+    width: 20px;
+    height: 20px;
+    margin-left: -3px;
+    margin-right: 5px;
+    /* list-style-image: none; */
+}
+#cards .image h3{
+    margin-top: -15px;
+}
+#cards .image {
+    display: flex
+}
+#card .card-img-top:hover {
+    width: 280px;
+    height: 250px;
+}
+#card video:hover {
+    width: 280px;
+    height: 250px;
+}

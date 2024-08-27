@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbars {
+    display: flex;
+    /* align-items: center; */
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+}
+
+#navbars::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    margin: 4px 6px;
+    border-radius: 50px;
+}
+
+.heading {
+    margin: 20px 10px;
+    color: rgb(10, 10, 10);
+}
+
+.item {
+    margin: 0px 950px;
+}
+
+/* .item a{
+    width:100px;
+} */
+ul .nav a {
+    width: 100px;
+}
+
+ul .navs a {
+    width: 60px;
+}
+
+#navbars ul {
+    display: flex;
+}
+
+#navbars ul li {
+    list-style: none;
+    font-size: 1.2 rem;
+}
+
+#navbars ul li a {
+    color: rgb(11, 0, 0);
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 25px 5px;
+}
+
+
+/* #navbars ul li a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+    
+} */
+
+ul .nav a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+    width: 120px;
+}
+
+ul .navs a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+    width: 60px;
+}
+
+em {
+    font-size: 30px;
+}
+
+#login {
+    margin-top: 70px;
+    border: 8px solid white;
+    background-color: whitesmoke;
+    /* display: inline-block; */
+    width: 350px;
+    height: 400px;
+    box-shadow: 30px 30px 50px #fbf7f7,
+
+        -25px -25px 38px #e3e1e1;
+    /* transform: translate(-50%, -150%) scale(0); */
+    /* box-shadow: 6px -6px 5px -5px  rgb(245, 245, 247); */
+}
+
+.fill input {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="number"]::placeholder {
+    text-align: center;
+}
+
+input[type="password"]::placeholder {
+    text-align: center;
+}
+input[type="submit"]::placeholder {
+    text-align: center;
+}
+.submit button {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(10, 9, 16);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.submit  button a  {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.signup button {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgb(10, 9, 16);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.signup  button a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.media img {
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px
+}

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    top:0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 40px;
+    width: 45px;
+    margin: 4px 6px;
+    border-radius: 50px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2 rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 8px 22px;
+    /* border-radius: 20px; */
+}
+
+#navbar ul li a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size:100%;
+    font-weight: bold;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    margin: 200px 0px 0px 0px;
+    height: 300px;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1 {
+    color: rgb(15, 16, 15);
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#home p {
+    color: rgb(15, 16, 15);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.btn {
+    color: black;
+    padding: 6px 20px;
+    border: 2px solid rgb(234, 228, 228);
+    background-color: rgb(87, 90, 90);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 17px;
+}
+
+#services {
+    margin: 50px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 10px;
+    margin: -50px 10px;
+    border-radius: 20px;
+    background-color: rgb(114, 176, 203);
+}
+
+#services .box img {
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.h1-primary {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    padding: 12px;
+    margin: 50px 550px;
+}
+.h3-primary {
+    color: blue;
+    font-weight: 800;
+    font-style: italic;
+    font-size:500%
+ }
+.h-secondary {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.3rem;
+}
+
+#client-section {
+    position: relative;
+    height: 344px;
+}
+
+#client {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img {
+    height: 140px;
+}
+
+.client-item {
+    padding: 35px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../b-img1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin: 9px 3px;
+}
+
+.h2-primary {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 50px 550px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('../img17.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin: -42px 3px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    margin-top: 12px;
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding:0.5 rem;
+    border-radius: 9px;
+    font-size: 1.2 rem;
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+}
+.h-primarycenter {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 50px 550px;
+}
+
+footer {
+    background-color: black;
+    color: azure;
+    padding: 2px 400px;
+    align-items: center;
+    justify-content: center;
+}

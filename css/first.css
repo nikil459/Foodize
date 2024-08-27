@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbars {
+    display: flex;
+    /* align-items: center; */
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+}
+
+#navbars::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    margin: 4px 6px;
+    border-radius: 50px;
+}
+
+.heading {
+    margin: 20px 10px;
+    color: white;
+}
+
+.item {
+    margin: 0px 950px;
+}
+
+#navbars ul {
+    display: flex;
+}
+
+#navbars ul li {
+    list-style: none;
+    font-size: 1.2 rem;
+}
+
+#navbars ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 25px 5px;
+}
+
+
+#navbars ul li a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+}
+em{
+    font-size: 30px;
+}
+#homes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 20px;
+    margin: 20px 0px 0px 0px;
+    height: 80%;
+}
+
+#homes::before {
+    content: "";
+    background: url('../logo/bg4.jpg ') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#homes h1 {
+    color: rgb(236, 240, 236);
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+}
+
+#homes p {
+    color: rgb(240, 245, 240);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.frontpage {
+    margin: 90px 0px 0px 0px;
+}
+
+/* .h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+} */
+
+.btn {
+    color: black;
+    padding: 6px 30px;
+    border: 2px solid rgb(234, 228, 228);
+    /* background-color: rgb(87, 90, 90); */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 10px 0px 0px 300px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px; 
+    font-size: 40px;
+    font-weight: 100;
+}
+.section img{
+  height:30px;
+  width:40px;
+  border-radius: 3px;
+  margin:8px;
+}
+.paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+    margin-left: 400px;;
+}
+.container {
+    display: flex;
+    display: grid;
+    margin-top: 30px;
+    /* background-color: rgb(31, 137, 137); */
+    /* grid-template-columns: 300px 100px 100px; */
+    /* grid-template-columns: 300px auto 100px; */
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-columns: 800px 900px 200px; */
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width:100%
+}
+
+.items{
+    /* background-color: rgb(13, 194, 249); */
+    border: 1px solid rgb(13, 9, 9);
+    margin: 3px;
+    padding: 30px 120px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    
+}
+.items:hover {
+    color: rgb(19, 15, 15);
+    background-color:rgb(186, 203, 165);
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+    font-size: large;
+}
+.footer {
+    /* background-color: hsl(192 , 70% , 51%);  */
+    height: 30vh;
+}
+.container1 {
+    /* background-color: #121330; */
+    height: 30vh;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px 0px 20px;
+
+}
+
+
+
+.cols1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    /* /* height: 35vh; *; */
+    width: 90%;
+    margin-right: 40px;
+    word-spacing: normal;
+    padding-bottom: 10vh;
+    /* color: linear-gradient(120deg,
+            hsl(136, 65%, 51%),
+            hsl(192, 70%, 51%)); */
+            color:black;
+}
+
+.copyright {
+    background-color: hsl(0, 0, 0);
+    color: white;
+    text-align: center;
+
+}
+
+.copyright>h1 {
+    font-size: 10px;
+    font-weight: 90;
+    margin-bottom: 20px;
+    height: 70px;
+    color: hsl(210, 5%, 8%);
+
+
+
+
+
+}

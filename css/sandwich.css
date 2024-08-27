@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    width:80%;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+#navbars {
+    display: flex;
+    /* align-items: center; */
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+}
+
+#navbars::before {
+    content: "";
+    background-color: rgb(53, 52, 52);
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+
+#logos {
+    margin: 10px 34px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#logos img {
+    height: 55px;
+    width: 60px;
+    margin: 4px 6px;
+    border-radius: 50px;
+}
+
+.heading {
+    margin: 20px 10px;
+    color: rgb(6, 0, 0);
+}
+
+
+#navbars ul {
+    display: flex;
+}
+
+#navbars ul li {
+    list-style: none;
+    font-size: 1.5 rem;
+}
+
+#navbars ul li a {
+    color: rgb(9, 0, 0);
+    display: flex;
+    text-decoration: none;
+    padding: 8px 20px;
+    /* margin: 25px 0px; */
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+#navbars ul li a:hover {
+    color: rgb(19, 15, 15);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+em {
+    font-size: 30px;
+}
+
+.search {
+    float: middle;
+    padding: 3px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+input[type='text'] {
+    border-radius: 20px;
+    width: 400px;
+    height: 30px;
+}
+
+.item {
+    margin: 0px 380px;
+}
+
+.item img {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    margin-top: 1.5px;
+    margin-right: 3px;
+
+}
+
+#offer {
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#offer h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+#offer h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section {
+    background-color: rgb(249, 251, 252);
+    width: 100%;
+}
+
+#discount {
+    display: flex;
+    margin-top: 30px;
+}
+
+.restaurant button {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 3px 10px;
+    border: 0.4px solid black;
+    background-color: aliceblue;
+}
+
+.restaurant button a {
+    color: black;
+    text-decoration: none;
+}
+.restaurant button select{
+    border: none;
+    background-color: aliceblue;
+}
+.restaurant button a:hover {
+    font-weight: bold;
+}
+
+/* .restaurant img {
+    width: 30px;
+    height: 30px;
+} */
+
+#cards {
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    display: grid;
+    margin-top: 30px;
+    /* background-color: rgb(31, 137, 137); */
+    /* grid-template-columns: 300px 100px 100px; */
+    /* grid-template-columns: 300px auto 100px; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: 800px 900px 200px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* width: 100% */
+}
+
+#card {
+    /* border: 1px solid black; */
+    margin: 5px 8px;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#card a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+#card img {
+    width: 250px;
+    height: 230px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+#card p {
+    margin-top: 0px;
+}
+
+#background-video {
+    width: 250px;
+    height: 230px;
+    object-fit: cover;
+}
+
+#card video {
+    border-radius: 24px;
+}
+
+#cards .image img {
+    margin-top: -1px;
+    width: 20px;
+    height: 20px;
+    margin-left: -3px;
+    margin-right: 5px;
+    /* list-style-image: none; */
+}
+
+#cards .image h3 {
+    margin-top: -1px;
+}
+
+#cards .image {
+    display: flex
+}
+
+#card .card-img-top:hover {
+    width: 280px;
+    height: 250px;
+}
+
+#card video:hover {
+    width: 280px;
+    height: 250px;
+}
